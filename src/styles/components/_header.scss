@@ -1,0 +1,137 @@
+@use '../abstracts/mixins' as *;
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-block: 18px;
+  display: flex;
+  background: rgba(18, 24, 38, 0.92);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+
+  @include mobile {
+    padding-block: 14px;
+  }
+}
+
+.site-header-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  @include mobile {
+    align-items: flex-start;
+  }
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-h);
+  font-family: var(--interactive);
+  font-weight: var(--fw-700);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: var(--radius-8);
+  background: #e8f7ff;
+
+  img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.brand-name {
+  letter-spacing: 0;
+}
+
+.main-nav {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+
+  a {
+    color: var(--text);
+    font-family: var(--interactive);
+    font-size: var(--font-14);
+    font-weight: var(--fw-600);
+    line-height: var(--lh-14);
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: var(--radius-8);
+    transition:
+      background var(--duration-base) var(--ease),
+      color var(--duration-base) var(--ease);
+
+    &:hover,
+    &:focus-visible,
+    &.active {
+      color: var(--text-h);
+      background: rgba(255, 255, 255, 0.08);
+      outline: none;
+    }
+  }
+
+  @include mobile {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 18px 18px;
+    background: rgba(18, 24, 38, 0.98);
+    border-bottom: 1px solid var(--border);
+
+    &.is-open {
+      display: flex;
+      animation: var(--animation-fade-in);
+    }
+
+    a {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  cursor: pointer;
+
+  @include interactive-surface;
+
+  span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    margin: 3px auto;
+    border-radius: 999px;
+    background: var(--text-h);
+  }
+
+  @include mobile {
+    display: block;
+    flex: 0 0 auto;
+  }
+}

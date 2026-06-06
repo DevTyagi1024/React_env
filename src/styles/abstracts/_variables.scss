@@ -1,0 +1,177 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+$text: #cbd5e1;
+$text-light: #f8fafc;
+$text-muted: #94a3b8;
+$bg: #0f172a;
+$surface: #121826;
+$surface-2: #172033;
+$border: rgba(226, 232, 240, 0.14);
+$code-bg: rgba(226, 232, 240, 0.08);
+$blue-300: #7dd3fc;
+$blue-400: #38bdf8;
+$blue-950: #082f49;
+$blue-soft: rgba(125, 211, 252, 0.12);
+$blue-border: rgba(125, 211, 252, 0.45);
+$white-06: rgba(255, 255, 255, 0.06);
+$white-08: rgba(255, 255, 255, 0.08);
+$white-10: rgba(255, 255, 255, 0.1);
+$slate-border: rgba(226, 232, 240, 0.28);
+$social-bg: rgba(226, 232, 240, 0.08);
+
+// Font families
+$font-inter: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+$font-space: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+$font-jakarta: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+$sans: $font-inter;
+$heading: $font-space;
+$interactive: $font-jakarta;
+$mono: ui-monospace, Consolas, monospace;
+
+// Font sizes
+$font-10: 10px;
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+$font-26: 26px;
+$font-28: 28px;
+$font-30: 30px;
+$font-32: 32px;
+$font-34: 34px;
+$font-36: 36px;
+$font-38: 38px;
+$font-40: 40px;
+$font-42: 42px;
+$font-44: 44px;
+$font-46: 46px;
+$font-48: 48px;
+$font-50: 50px;
+$font-52: 52px;
+$font-54: 54px;
+$font-56: 56px;
+$font-58: 58px;
+$font-60: 60px;
+$font-62: 62px;
+$font-64: 64px;
+$font-66: 66px;
+$font-68: 68px;
+$font-70: 70px;
+$font-72: 72px;
+$font-74: 74px;
+$font-76: 76px;
+$font-78: 78px;
+$font-80: 80px;
+$font-82: 82px;
+$font-84: 84px;
+$font-86: 86px;
+$font-88: 88px;
+$font-90: 90px;
+$font-92: 92px;
+$font-94: 94px;
+$font-96: 96px;
+$font-98: 98px;
+$font-100: 100px;
+
+// Line heights
+$lh-10: 10px;
+$lh-12: 12px;
+$lh-14: 14px;
+$lh-16: 16px;
+$lh-18: 18px;
+$lh-20: 20px;
+$lh-22: 22px;
+$lh-24: 24px;
+$lh-26: 26px;
+$lh-28: 28px;
+$lh-30: 30px;
+$lh-32: 32px;
+$lh-34: 34px;
+$lh-36: 36px;
+$lh-38: 38px;
+$lh-40: 40px;
+$lh-42: 42px;
+$lh-44: 44px;
+$lh-46: 46px;
+$lh-48: 48px;
+$lh-50: 50px;
+$lh-52: 52px;
+$lh-54: 54px;
+$lh-56: 56px;
+$lh-58: 58px;
+$lh-60: 60px;
+$lh-62: 62px;
+$lh-64: 64px;
+$lh-66: 66px;
+$lh-68: 68px;
+$lh-70: 70px;
+$lh-72: 72px;
+$lh-74: 74px;
+$lh-76: 76px;
+$lh-78: 78px;
+$lh-80: 80px;
+$lh-82: 82px;
+$lh-84: 84px;
+$lh-86: 86px;
+$lh-88: 88px;
+$lh-90: 90px;
+$lh-92: 92px;
+$lh-94: 94px;
+$lh-96: 96px;
+$lh-98: 98px;
+$lh-100: 100px;
+
+// Font weights
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+
+// Radii
+$radius-4: 4px;
+$radius-6: 6px;
+$radius-8: 8px;
+
+// Buttons
+$btn-py: 10px;
+$btn-px: 16px;
+$btn-gap: 8px;
+$btn-primary-bg: $blue-300;
+$btn-primary-text: $blue-950;
+$btn-primary-border: $blue-300;
+$btn-primary-hover-bg: $blue-400;
+$btn-primary-hover-text: $blue-950;
+$btn-primary-hover-border: $blue-400;
+$btn-secondary-bg: $white-06;
+$btn-secondary-text: $text-light;
+$btn-secondary-border: $border;
+$btn-secondary-hover-bg: $white-10;
+$btn-secondary-hover-text: $white;
+$btn-secondary-hover-border: $slate-border;
+$btn-ghost-bg: transparent;
+$btn-ghost-text: $text;
+$btn-ghost-border: transparent;
+$btn-ghost-hover-bg: $white-08;
+$btn-ghost-hover-text: $text-light;
+$btn-ghost-hover-border: transparent;
+
+// Animation
+$duration-fast: 150ms;
+$duration-base: 200ms;
+$duration-slow: 300ms;
+$ease: ease;
+$animation-fade-in: fade-in $duration-slow $ease both;
+$animation-slide-up: slide-up $duration-slow $ease both;
+$animation-soft-pulse: soft-pulse 1.8s $ease infinite;
+
+// Layout
+$tablet: 1024px;
+$mobile: 768px;
+
+$shadow:
+  rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+  rgba(0, 0, 0, 0.05) 0 4px 6px -2px;

@@ -1,0 +1,186 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+:root {
+  --text: #{$text};
+  --text-h: #{$text-light};
+  --text-muted: #{$text-muted};
+  --bg: #{$bg};
+  --surface: #{$surface};
+  --surface-raised: #{$surface-2};
+  --border: #{$border};
+  --code-bg: #{$code-bg};
+  --accent: #{$blue-300};
+  --accent-strong: #{$blue-400};
+  --accent-bg: #{$blue-soft};
+  --accent-border: #{$blue-border};
+  --social-bg: #{$social-bg};
+  --white: #{$white};
+  --black: #{$black};
+  --shadow: #{$shadow};
+
+  --sans: #{$sans};
+  --heading: #{$heading};
+  --interactive: #{$interactive};
+  --font-inter: #{$font-inter};
+  --font-space: #{$font-space};
+  --font-jakarta: #{$font-jakarta};
+  --mono: #{$mono};
+
+  --font-10: #{$font-10};
+  --font-12: #{$font-12};
+  --font-14: #{$font-14};
+  --font-16: #{$font-16};
+  --font-18: #{$font-18};
+  --font-20: #{$font-20};
+  --font-22: #{$font-22};
+  --font-24: #{$font-24};
+  --font-26: #{$font-26};
+  --font-28: #{$font-28};
+  --font-30: #{$font-30};
+  --font-32: #{$font-32};
+  --font-34: #{$font-34};
+  --font-36: #{$font-36};
+  --font-38: #{$font-38};
+  --font-40: #{$font-40};
+  --font-42: #{$font-42};
+  --font-44: #{$font-44};
+  --font-46: #{$font-46};
+  --font-48: #{$font-48};
+  --font-50: #{$font-50};
+  --font-52: #{$font-52};
+  --font-54: #{$font-54};
+  --font-56: #{$font-56};
+  --font-58: #{$font-58};
+  --font-60: #{$font-60};
+  --font-62: #{$font-62};
+  --font-64: #{$font-64};
+  --font-66: #{$font-66};
+  --font-68: #{$font-68};
+  --font-70: #{$font-70};
+  --font-72: #{$font-72};
+  --font-74: #{$font-74};
+  --font-76: #{$font-76};
+  --font-78: #{$font-78};
+  --font-80: #{$font-80};
+  --font-82: #{$font-82};
+  --font-84: #{$font-84};
+  --font-86: #{$font-86};
+  --font-88: #{$font-88};
+  --font-90: #{$font-90};
+  --font-92: #{$font-92};
+  --font-94: #{$font-94};
+  --font-96: #{$font-96};
+  --font-98: #{$font-98};
+  --font-100: #{$font-100};
+
+  --lh-10: #{$lh-10};
+  --lh-12: #{$lh-12};
+  --lh-14: #{$lh-14};
+  --lh-16: #{$lh-16};
+  --lh-18: #{$lh-18};
+  --lh-20: #{$lh-20};
+  --lh-22: #{$lh-22};
+  --lh-24: #{$lh-24};
+  --lh-26: #{$lh-26};
+  --lh-28: #{$lh-28};
+  --lh-30: #{$lh-30};
+  --lh-32: #{$lh-32};
+  --lh-34: #{$lh-34};
+  --lh-36: #{$lh-36};
+  --lh-38: #{$lh-38};
+  --lh-40: #{$lh-40};
+  --lh-42: #{$lh-42};
+  --lh-44: #{$lh-44};
+  --lh-46: #{$lh-46};
+  --lh-48: #{$lh-48};
+  --lh-50: #{$lh-50};
+  --lh-52: #{$lh-52};
+  --lh-54: #{$lh-54};
+  --lh-56: #{$lh-56};
+  --lh-58: #{$lh-58};
+  --lh-60: #{$lh-60};
+  --lh-62: #{$lh-62};
+  --lh-64: #{$lh-64};
+  --lh-66: #{$lh-66};
+  --lh-68: #{$lh-68};
+  --lh-70: #{$lh-70};
+  --lh-72: #{$lh-72};
+  --lh-74: #{$lh-74};
+  --lh-76: #{$lh-76};
+  --lh-78: #{$lh-78};
+  --lh-80: #{$lh-80};
+  --lh-82: #{$lh-82};
+  --lh-84: #{$lh-84};
+  --lh-86: #{$lh-86};
+  --lh-88: #{$lh-88};
+  --lh-90: #{$lh-90};
+  --lh-92: #{$lh-92};
+  --lh-94: #{$lh-94};
+  --lh-96: #{$lh-96};
+  --lh-98: #{$lh-98};
+  --lh-100: #{$lh-100};
+
+  --fw-400: #{$fw-400};
+  --fw-500: #{$fw-500};
+  --fw-600: #{$fw-600};
+  --fw-700: #{$fw-700};
+
+  --radius-4: #{$radius-4};
+  --radius-6: #{$radius-6};
+  --radius-8: #{$radius-8};
+  --site-max: 1180px;
+  --site-pad: 32px;
+  --button-padding-y: #{$btn-py};
+  --button-padding-x: #{$btn-px};
+  --button-gap: #{$btn-gap};
+  --button-primary-bg: #{$btn-primary-bg};
+  --button-primary-text: #{$btn-primary-text};
+  --button-primary-border: #{$btn-primary-border};
+  --button-primary-hover-bg: #{$btn-primary-hover-bg};
+  --button-primary-hover-text: #{$btn-primary-hover-text};
+  --button-primary-hover-border: #{$btn-primary-hover-border};
+  --button-secondary-bg: #{$btn-secondary-bg};
+  --button-secondary-text: #{$btn-secondary-text};
+  --button-secondary-border: #{$btn-secondary-border};
+  --button-secondary-hover-bg: #{$btn-secondary-hover-bg};
+  --button-secondary-hover-text: #{$btn-secondary-hover-text};
+  --button-secondary-hover-border: #{$btn-secondary-hover-border};
+  --button-ghost-bg: #{$btn-ghost-bg};
+  --button-ghost-text: #{$btn-ghost-text};
+  --button-ghost-border: #{$btn-ghost-border};
+  --button-ghost-hover-bg: #{$btn-ghost-hover-bg};
+  --button-ghost-hover-text: #{$btn-ghost-hover-text};
+  --button-ghost-hover-border: #{$btn-ghost-hover-border};
+
+  --duration-fast: #{$duration-fast};
+  --duration-base: #{$duration-base};
+  --duration-slow: #{$duration-slow};
+  --ease: #{$ease};
+  --animation-fade-in: #{$animation-fade-in};
+  --animation-slide-up: #{$animation-slide-up};
+  --animation-soft-pulse: #{$animation-soft-pulse};
+
+  font: var(--font-18) / var(--lh-26) var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include tablet {
+    font-size: var(--font-16);
+    --site-pad: 24px;
+  }
+
+  @include mobile {
+    --site-pad: 18px;
+  }
+}
+
+body {
+  margin: 0;
+}

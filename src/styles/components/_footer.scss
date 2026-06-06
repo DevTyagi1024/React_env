@@ -1,0 +1,122 @@
+@use '../abstracts/mixins' as *;
+
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 28px;
+  border-top: 1px solid var(--border);
+  background:
+    linear-gradient(135deg, rgba(125, 211, 252, 0.08), transparent 42%),
+    var(--surface);
+}
+
+.footer-accent {
+  height: 4px;
+  background: linear-gradient(90deg,
+      transparent,
+      var(--accent),
+      var(--accent-strong),
+      transparent);
+  opacity: 0.9;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0 28px;
+  justify-content: space-between;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+}
+
+.footer-brand {
+  max-width: 520px;
+
+  p {
+    max-width: 460px;
+    margin-top: 16px;
+    color: var(--text-muted);
+    font-size: var(--font-16);
+    line-height: var(--lh-24);
+  }
+}
+
+.footer-logo {
+  width: fit-content;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: center;
+
+  a {
+    color: var(--text);
+    font-family: var(--interactive);
+    font-size: var(--font-14);
+    font-weight: var(--fw-600);
+    line-height: var(--lh-18);
+    text-decoration: none;
+    padding: 12px 14px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-8);
+    background: rgba(255, 255, 255, 0.035);
+    transition:
+      background var(--duration-base) var(--ease),
+      border-color var(--duration-base) var(--ease),
+      color var(--duration-base) var(--ease),
+      transform var(--duration-fast) var(--ease);
+
+    &:hover,
+    &:focus-visible,
+    &.active {
+      color: var(--text-h);
+      border-color: var(--accent-border);
+      background: var(--accent-bg);
+      outline: none;
+      transform: translateY(-1px);
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: var(--font-14);
+  line-height: var(--lh-20);
+
+  p {
+    color: var(--text-muted);
+    font-size: var(--font-14);
+    line-height: var(--lh-20);
+    margin: 0;
+  }
+
+  p:last-child {
+    text-align: right;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+
+    p:last-child {
+      text-align: left;
+    }
+  }
+}
