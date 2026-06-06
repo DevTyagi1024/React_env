@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <header className="site-header">
-      <div className="site-container site-header-inner">
+      <div className="site-container site-header-inner container">
         <Link className="brand" to="/" aria-label="REACT ENV home">
           <span className="brand-mark">
             <img src={reactLogo} alt="" />

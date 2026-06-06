@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear()
 function Footer() {
   return (
     <footer className="site-footer">
-      <div className="site-container">
+      <div className="container">
         <div className="footer-accent" aria-hidden="true"></div>
 
         <div className="footer-inner">

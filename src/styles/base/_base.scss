@@ -131,6 +131,26 @@
   --radius-8: #{$radius-8};
   --site-max: 1180px;
   --site-pad: 32px;
+  
+  // Spacing variables
+  --spacing-4: #{$spacing-4};
+  --spacing-8: #{$spacing-8};
+  --spacing-12: #{$spacing-12};
+  --spacing-16: #{$spacing-16};
+  --spacing-20: #{$spacing-20};
+  --spacing-24: #{$spacing-24};
+  --spacing-28: #{$spacing-28};
+  --spacing-32: #{$spacing-32};
+  --spacing-36: #{$spacing-36};
+  --spacing-40: #{$spacing-40};
+  --spacing-44: #{$spacing-44};
+  --spacing-48: #{$spacing-48};
+
+  // Color aliases
+  --color-success: #{$color-success};
+  --color-error: #{$color-error};
+  --color-warning: #{$color-warning};
+  
   --button-padding-y: #{$btn-py};
   --button-padding-x: #{$btn-px};
   --button-gap: #{$btn-gap};

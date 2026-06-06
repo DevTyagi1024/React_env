@@ -1,4 +1,5 @@
 import Banner from '../components/Banner'
+import ProductCardListing from '../components/ProductCardListing'
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
         secondaryButtonLink="/demo"
         secondaryButtonText="Try Demo"
       />
+        <ProductCardListing />
     </div>
   )
 }
