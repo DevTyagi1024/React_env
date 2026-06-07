@@ -1,0 +1,101 @@
+@use '../abstracts/mixins' as *;
+
+.demo-feature-section {
+  padding: var(--spacing-40) 0;
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.06), transparent 90%);
+
+  .demo-feature-card {
+    display: grid;
+    gap: var(--spacing-32);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-8);
+    padding: var(--spacing-32);
+    box-shadow: var(--shadow);
+
+    @include tablet {
+      padding: var(--spacing-28);
+    }
+
+    @include mobile {
+      padding: var(--spacing-24);
+    }
+  }
+
+  .demo-feature-intro {
+    max-width: 620px;
+  }
+
+  .demo-feature-kicker {
+    display: inline-block;
+    margin-bottom: var(--spacing-12);
+    color: var(--accent);
+    font-size: var(--font-14);
+    font-weight: var(--fw-700);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .demo-feature-title {
+    margin: 0 0 var(--spacing-16);
+    font-size: var(--font-34);
+    line-height: var(--lh-42);
+    color: var(--text-h);
+
+    @include tablet {
+      font-size: var(--font-30);
+      line-height: var(--lh-38);
+    }
+
+    @include mobile {
+      font-size: var(--font-26);
+      line-height: var(--lh-34);
+    }
+  }
+
+  .demo-feature-copy {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: var(--font-16);
+    line-height: var(--lh-26);
+  }
+
+  .demo-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-20);
+
+    @include tablet {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .demo-feature-tile {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-8);
+    padding: var(--spacing-24);
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+
+    h3 {
+      margin: 0;
+      font-size: var(--font-20);
+      line-height: var(--lh-28);
+      color: var(--text-h);
+    }
+
+    p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: var(--font-15);
+      line-height: var(--lh-24);
+    }
+  }
+}

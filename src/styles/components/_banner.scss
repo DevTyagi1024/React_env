@@ -7,14 +7,11 @@
   min-height: 520px;
   overflow: hidden;
   align-items: center;
-  // border: 1px solid var(--border);
   border-radius: var(--radius-8);
-  background: var(--surface);
   box-shadow: var(--shadow);
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  padding: 40px;
 
   @include tablet {
     min-height: 460px;

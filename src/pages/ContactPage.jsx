@@ -1,5 +1,5 @@
 import Banner from '../components/Banner'
-import ProductCardListing from '../components/ProductCardListing'
+import ContactSection from '../components/ContactSection'
 
 const ContactPage = () => {
   return (
@@ -13,7 +13,7 @@ const ContactPage = () => {
         secondaryButtonLink="/about"
         secondaryButtonText="Learn More"
       />
-        <ProductCardListing />
+      <ContactSection />
     </div>
   )
 }

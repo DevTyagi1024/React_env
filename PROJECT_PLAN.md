@@ -85,6 +85,30 @@ Track the project tasks, implementation steps, and verification notes.
 - [x] Integrate ProductCardListing component into ProductListingPage.
 - [ ] Connect add-to-cart functionality to a shopping cart system when ready.
 
+## Action Plan: Task Eight - Add Global Newsletter Section
+
+- [x] Create a reusable NewsletterSection component with a subscription input.
+- [x] Add responsive newsletter styling using existing design tokens.
+- [x] Place the newsletter section globally so it appears on every route.
+- [x] Use the shared container pattern from the app layout.
+- [ ] Connect the subscription form to a real email backend when ready.
+
+## Action Plan: Task Nine - Create Responsive Contact Page Form
+
+- [x] Add a new ContactSection component with a 60/40 form and contact info layout.
+- [x] Build a responsive contact form with name, email, subject, and message fields.
+- [x] Display address, phone, email, and business hours in the contact info panel.
+- [x] Show a thank you message after form submission.
+- [x] Use existing button and input design patterns for visual consistency.
+- [ ] Connect form submissions to an API backend when ready.
+
+## Action Plan: Task Ten - Enhance Demo Page
+
+- [x] Add a DemoFeatureSection component to showcase key project strengths.
+- [x] Build responsive feature cards for the demo page.
+- [x] Keep the product listing section in place for interactive preview.
+- [ ] Add additional demo interactivity or live API examples later.
+
 ## Notes
 
 - This document was created in the project root directory.

@@ -6,6 +6,7 @@ import ContactPage from './pages/ContactPage'
 import DemoPage from './pages/DemoPage'
 import HomePage from './pages/HomePage'
 import ProductListingPage from './pages/ProductListingPage'
+import NewsletterSection from './components/NewsletterSection'
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
           <Route path="/products" element={<ProductListingPage />} />
           <Route path="/demo" element={<DemoPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <NewsletterSection />
       <Footer />
     </div>
   )

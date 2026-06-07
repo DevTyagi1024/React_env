@@ -1,5 +1,6 @@
 import Banner from '../components/Banner'
 import ProductCardListing from '../components/ProductCardListing'
+import DemoFeatureSection from '../components/DemoFeatureSection'
 
 const DemoPage = () => {
   return (
@@ -13,7 +14,8 @@ const DemoPage = () => {
         primaryButtonLink="/contact"
         primaryButtonText="Contact Us"
       />
-        <ProductCardListing />
+      <DemoFeatureSection />
+      <ProductCardListing />
     </div>
   )
 }

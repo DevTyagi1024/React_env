@@ -5,9 +5,6 @@ function Banner(props) {
   return (
     <>
       <section className="banner" aria-label="Project introduction">
-        {/* <img className="banner-image" src={bannerImage} alt="" /> */}
-        <div className="banner-overlay" aria-hidden="true"></div>
-
         <div className="banner-content">
           <p className="banner-kicker">{props.kicker}</p>
           <h1>{props.title}</h1>
