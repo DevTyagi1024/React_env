@@ -37,7 +37,7 @@ const ProductCardListing = () => {
             name: 'Mechanical Keyboard RGB',
             price: 149.99,
             description: 'Customizable RGB lighting with mechanical switches and aluminum frame.',
-            image: 'https://images.unsplash.com/photo-1587829191301-f282c4b1c0b5?w=400&h=400&fit=crop'
+           image: 'https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=400&fit=crop'
         },
         {
             id: 6,
